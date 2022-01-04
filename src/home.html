@@ -1,0 +1,30 @@
+<div ng-include src="'header.html'"></div ng-include>
+<div>
+    <div class="pesquisa">
+        <input ng-model="search" type="text" placeholder="Buscar Herói..." />
+        <img src="assets/search-interface-symbol.png" ng-click="getName(search)">
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Heróis</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-if="!characters.length">
+                    <td>Sem Resultado</td>
+                </tr>
+                <tr ng-repeat="character in characters" ng-click="info(character.id)">
+                    <td><img src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt=""> </td>
+                    <td>{{character.name}}</td>
+                </tr>
+
+            </tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<div ng-include src="'header.html'"></div ng-include>
+
+<div class="content">
+    <img class="imgC" src="{{img.path}}.{{img.extension}}" alt="" />
+    <h2>{{name}}</h2>
+</div>
+<div class="content" ng-repeat="comic in comics">{{comic.name}}</div>

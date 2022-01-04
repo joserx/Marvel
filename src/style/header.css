@@ -1,0 +1,11 @@
+header {
+    min-height: 42px;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    display: grid;
+    place-content: center;
+}
+
+.imgHead {
+    min-width: 120px;
+}

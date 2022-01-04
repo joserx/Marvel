@@ -1,0 +1,37 @@
+.pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.pesquisa>img {
+    width: 24px;
+}
+
+input {
+    min-height: 20px;
+    min-width: 200px;
+    border: none;
+    background: none;
+    outline: none;
+    flex-grow: 100;
+}
+
+img {
+    max-width: 50px;
+}
+
+td {
+    border: 2px;
+}
+
+table {
+    background-color: rgb(46, 43, 43);
+    display: flex;
+    color: blanchedalmond;
+}
